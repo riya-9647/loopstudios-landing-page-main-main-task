@@ -30,9 +30,14 @@ body {
 .first {
   padding-top: 40px;
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   /* background-color: aqua; */
-  background-image: url(./assets/images/desktop/image-hero.jpg);
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(./assets/images/desktop/image-hero.jpg);
   background-size: auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,17 +52,22 @@ body {
   text-decoration: none;
   color: var(--White);
 }
+.first .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
 .first .inner {
   width: 50%;
-  height: 50vh;
+  /* height: 50vh; */
   border: 1px solid var(--White);
   color: var(--White);
   padding: 10px;
   font-size: 65px;
   font-weight: 100;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
 }
 
 /* header end */
@@ -111,14 +121,15 @@ P {
 .creation .btn {
   background-color: var(--White);
   font-size: 15px;
-  padding: 8px 15px;
+  padding: 10px 20px;
+  letter-spacing: 2;
 }
 
 /* creation section end  */
 
 /* outer section satrt */
 .outer {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   width: 100%;
 }
 .outer .smallimg img {
@@ -127,6 +138,8 @@ P {
 
 .outer .smallimg {
   position: relative;
+  /* padding-bottom: 10px; */
+  /* box-shadow: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
 }
 .outer .smallimg p {
   position: absolute;
@@ -185,8 +198,14 @@ P {
     width: 100%;
     height: 100%;
   }
-  .first.inner {
-    /* font-size: 10px; */
+  .first img {
+    margin-left: 20px;
+  }
+  .first .inner {
+    font-size: 60px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
   }
   .leader {
     flex-direction: column;
@@ -199,6 +218,7 @@ P {
     height: 100%;
   }
   .leader .right {
+    margin-top: 20px;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -210,13 +230,14 @@ P {
   }
   .leader .right h2 {
     font-size: 20px;
+    padding-bottom: 20px;
   }
   .creation {
     padding: 30px;
   }
   .creation h1 {
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 75px;
     /* text-align: center; */
   }
   .creation .btn {
@@ -229,10 +250,14 @@ P {
     height: 100%;
     /* object-fit: cover; */
   }
+  .outer .smallimg img {
+    margin-bottom: 30px;
+  }
   .button {
     background-color: var(--White);
     font-size: 15px;
-    padding: 8px 15px;
+    padding: 10px 20px;
+    letter-spacing: 2;
     display: block;
     margin-left: 220px;
     margin-top: 30px;
@@ -244,6 +269,9 @@ P {
     flex-direction: column;
     width: 100%;
   }
+  .footer .lastbox img {
+    padding-bottom: 10px;
+  }
   .footer .about {
     flex-direction: column;
   }
@@ -253,5 +281,14 @@ P {
   .footer .copy {
     width: 100%;
     margin-left: 70px;
+  }
+  .footer .footerlist {
+    align-items: center;
+  }
+  .footer .copy {
+    margin-bottom: 20px;
+  }
+  .footer .navlogo {
+    width: 50%;
   }
 }
