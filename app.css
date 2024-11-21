@@ -112,6 +112,7 @@ P {
 /* creation section start  */
 .creation {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 .creation h1 {
   text-transform: uppercase;
