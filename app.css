@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Alata", sans-serif;
+  cursor: pointer;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+/* utility class */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.item-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* header start */
+.first {
+  padding-top: 40px;
+  width: 100%;
+  height: 70vh;
+  /* background-color: aqua; */
+  background-image: url(./assets/images/desktop/image-hero.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first .item {
+  width: 25%;
+  list-style-type: none;
+  text-align: center;
+}
+.first .item li a {
+  text-decoration: none;
+  color: var(--White);
+}
+.first .inner {
+  width: 50%;
+  height: 50vh;
+  border: 1px solid var(--White);
+  color: var(--White);
+  padding: 10px;
+  font-size: 65px;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+/* header end */
+
+/* leader section start */
+
+.leader {
+  width: 100%;
+  margin-top: 50px;
+}
+.leader .left img {
+  width: 40vw;
+  height: 60vh;
+  position: relative;
+}
+.leader .right {
+  width: 45vw;
+  height: 45vh;
+  background-color: var(--White);
+  position: absolute;
+  left: 40%;
+  bottom: -40%;
+  padding-left: 80px;
+  display: flex;
+  align-items: center;
+}
+.leader .right h2,
+P {
+  /* width: 75%; */
+}
+.leader .right h2 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 80px;
+}
+.leader .right p {
+  color: var(--Dark-Gray);
+}
+
+/* leader section end */
+
+/* creation section start  */
+.creation {
+  margin-top: 50px;
+}
+.creation h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 40px;
+}
+.creation .btn {
+  background-color: var(--White);
+  font-size: 15px;
+  padding: 8px 15px;
+}
+
+/* creation section end  */
+
+/* outer section satrt */
+.outer {
+  margin-top: 50px;
+  width: 100%;
+}
+.outer .smallimg img {
+  width: 100%;
+}
+
+.outer .smallimg {
+  position: relative;
+}
+.outer .smallimg p {
+  position: absolute;
+  width: 50%;
+  left: 5%;
+  bottom: 6%;
+  color: var(--White);
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/* outer section end  */
+
+.button {
+  display: none;
+}
+
+/* footer start  */
+
+.footer {
+  width: 100%;
+  height: 150px;
+  background-color: var(--Black);
+  margin-top: 50px;
+  padding-top: 40px;
+}
+.footer .navlogo {
+  width: 12%;
+}
+.footer .footerlist li {
+  list-style-type: none;
+}
+.footer .product li {
+  list-style-type: none;
+}
+.footer .product li a {
+  text-decoration: none;
+  color: var(--White);
+}
+.footer .about {
+  padding-top: 20px;
+}
+.footer .copy {
+  color: var(--Dark-Gray);
+}
+.footer .events {
+  width: 28%;
+}
+
+/* footer end */
+
+/* responsiveness */
+@media (max-width: 768px) {
+  .first .item {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  .first.inner {
+    /* font-size: 10px; */
+  }
+  .leader {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+  }
+  .leader .left img {
+    width: 100%;
+    height: 100%;
+  }
+  .leader .right {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* background-color: var(--White); */
+    position: relative;
+    left: 0;
+    /* bottom: -40%; */
+    padding-left: 0;
+  }
+  .leader .right h2 {
+    font-size: 20px;
+  }
+  .creation {
+    padding: 30px;
+  }
+  .creation h1 {
+    font-size: 20px;
+    margin-left: 50px;
+    /* text-align: center; */
+  }
+  .creation .btn {
+    display: none;
+  }
+
+  .outer {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+  }
+  .button {
+    background-color: var(--White);
+    font-size: 15px;
+    padding: 8px 15px;
+    display: block;
+    margin-left: 220px;
+    margin-top: 30px;
+  }
+  .footer {
+    height: 100%;
+  }
+  .footer .lastbox {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer .about {
+    flex-direction: column;
+  }
+  .footer .product {
+    flex-direction: column;
+  }
+  .footer .copy {
+    width: 100%;
+    margin-left: 70px;
+  }
+}
