@@ -203,7 +203,7 @@ P {
     margin-left: 20px;
   }
   .first .inner {
-    font-size: 60px;
+    font-size: 45px;
     width: 100%;
     margin: 20px;
     padding: 20px;
@@ -278,10 +278,12 @@ P {
   }
   .footer .product {
     flex-direction: column;
+    padding-bottom: 10px;
   }
   .footer .copy {
     width: 100%;
     margin-left: 70px;
+    padding-bottom: 10px;
   }
   .footer .footerlist {
     align-items: center;
@@ -291,5 +293,6 @@ P {
   }
   .footer .navlogo {
     width: 50%;
+    padding-top: 20px;
   }
 }
